@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Effect - Northeastern Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Marquee Container */
+        .marquee-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Marquee Track */
+        .marquee-track {
+            display: flex;
+            width: 200%; /* Double width for seamless looping */
+            animation: marquee 25s linear infinite;
+        }
+        
+        /* Pause on hover */
+        .marquee-container:hover .marquee-track {
+            animation-play-state: paused;
+        }
+        
+        /* Marquee Item */
+        .marquee-item {
+            flex: 0 0 auto;
+            height: 100px;
+            margin: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .marquee-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .marquee-item img {
+            max-height: 70px;
+            max-width: 150px;
+            filter: grayscale(100%) brightness(150%);
+            transition: filter 0.3s ease;
+        }
+        
+        .marquee-item:hover img {
+            filter: grayscale(0%) brightness(100%);
+        }
+        
+        /* Marquee Animation */
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%); /* Move half the width */
+            }
+        }
+        
+        /* Features section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 40px;
+            max-width: 1000px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 25px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 320px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        
+        .feature-card h3 {
+            color: #4fc3f7;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .feature-card p {
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            padding: 20px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .marquee-item {
+                height: 80px;
+                margin: 0 15px;
+                padding: 10px 15px;
+            }
+            
+            .marquee-item img {
+                max-height: 50px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .marquee-track {
+                animation-duration: 20s;
+            }
+            
+            .marquee-item {
+                margin: 0 10px;
+                padding: 8px 12px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CSS Marquee Effect</h1>
+        <p class="description">Recreating the seamless scrolling effect from Northeastern University's website. This pure CSS solution creates an infinite, responsive marquee that pauses on hover.</p>
+    </div>
+    
+    <div class="container">
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <!-- Duplicate items for seamless looping -->
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="Vue">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="CSS3">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++">
+                </div>
+                
+                <!-- Duplicate items for seamless looping -->
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="Vue">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="CSS3">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python">
+                </div>
+                <div class="marquee-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="features">
+        <div class="feature-card">
+            <h3>How It Works</h3>
+            <p>The marquee effect is created by duplicating the content and using CSS animation to continuously scroll the track. The container hides overflow while the track moves horizontally.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Pure CSS Solution</h3>
+            <p>This implementation uses only HTML and CSS - no JavaScript required. The animation is smooth and efficient, leveraging hardware acceleration where available.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Interactive Features</h3>
+            <p>Hover over the marquee to pause the animation. Items have subtle hover effects for better user experience. The design is fully responsive for all devices.</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Recreated marquee effect based on Northeastern University's website | Pure CSS Solution</p>
+    </div>
+</body>
+</html>

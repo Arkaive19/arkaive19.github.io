@@ -1,6 +1,7 @@
 * {
   color: #e9f4f7;
-  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+  --font-sans:
+    'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
   /* border: 2px solid white; */
   /* overflow-x:hidden; */

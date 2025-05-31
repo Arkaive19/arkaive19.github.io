@@ -17,29 +17,33 @@
   min-height: 100vh;
 }
 
-.contact {
+.info-bar {
   width: 10vw;
   min-width: 80px;
   max-width: 160px;
   height: 95vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column-reverse;
+  /* align-items: center; */
+  /* justify-content: center; */
   background: #0b0e22;
-  top: 2.5vw;
   position: sticky;
+  top: 2.5vw;
 }
 
-.contact-left {
+.info-bar-left {
   left: 1vw;
-  top: 0;
+  /* top: 0; */
 }
 
-.contact-right {
+.info-bar-right {
   right: 1vw;
-  top: 0;
+  justify-content: center;
+  align-items: flex-end;
+  /* top: 0; */
   /* margin-left: auto; */
 }
+
 .content {
   margin-top: 10vh;
   flex: 1 1 0;

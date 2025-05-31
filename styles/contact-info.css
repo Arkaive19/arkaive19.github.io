@@ -1,0 +1,70 @@
+.contact-icon {
+  position: relative;
+  width: 25px; /* Adjust as needed */
+  height: 25px;
+  display: inline-block;
+  margin: 0 8px 2vh;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.contact-info-teal {
+  opacity: 0;
+  z-index: 2;
+}
+
+.contact-icon:hover .contact-info-white {
+  opacity: 0;
+}
+
+.contact-icon:hover .contact-info-teal {
+  opacity: 1;
+}
+
+.contact-icon:hover {
+  transform: translateY(-10px);
+}
+
+.last-item {
+  content: '';
+  margin: 20px 20px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 90px;
+  background-color: #e9f4f7;
+  z-index: 0;
+  display: block;
+}
+
+.last-item- {
+  content: '';
+  margin: 20px 75px;
+  transform: translateY(180%);
+  width: 2px;
+  height: 90px;
+  background-color: #e9f4f7;
+  z-index: 0;
+  display: block;
+}
+
+.gmail {
+  font-weight: 400;
+  font-family: var(--font-sans);
+  transform: rotate(-90deg) translateX(-44vh);
+  transition: 0.3s ease-in-out;
+}
+
+.gmail:hover {
+  color: #77d4e4;
+  transform: rotate(-90deg) translateX(-43vh);
+}

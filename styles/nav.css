@@ -9,7 +9,9 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  transition: top 0.3s, box-shadow 0.3s;
+  transition:
+    top 0.3s,
+    box-shadow 0.3s;
   box-shadow: none;
   background-color: #0b0e22f6;
   padding-top: 10px;
@@ -44,10 +46,31 @@
   height: 5vh;
   object-fit: contain;
   margin-left: 2vw;
+  cursor: pointer;
+
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .nav {
   font-size: larger;
   font-family: var(--font-sans);
   margin-right: 2vw;
+}
+
+.TOS {
+  border: 2px solid #77d4e4;
+  margin-right: 5vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.nav:hover {
+  color: #73f5ed !important;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
 }
