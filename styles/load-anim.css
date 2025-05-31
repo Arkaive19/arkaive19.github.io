@@ -1,0 +1,21 @@
+.overlay {
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1),
+    filter 1s cubic-bezier(0.77, 0, 0.175, 1),
+    transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: scale(1);
+}
+
+.overlay.visible {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1);
+}
+
+.overlay.fade-out {
+  opacity: 0;
+  filter: blur(8px);
+  pointer-events: none;
+  /* transform: scale(0.0001); // optional for shrink effect */
+}

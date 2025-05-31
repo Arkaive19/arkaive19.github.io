@@ -1,0 +1,22 @@
+ #e9f4f7 text color
+ #73f5ed Accent
+ #77d4e4  primary color
+ #435680  secondary color
+  #0b0e22 background color
+
+
+
+
+
+
+
+
+
+
+
+
+#Ff4654,
+#ba3a46,
+#111823,
+#ffffff,
+#111823
