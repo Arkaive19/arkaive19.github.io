@@ -3,9 +3,9 @@
   width: 25px; /* Adjust as needed */
   height: 25px;
   display: inline-block;
-  margin: 0 8px 2vh;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+    margin-bottom: 2vh;
 }
 
 .contact-info {
@@ -16,6 +16,7 @@
   height: 100%;
   transition: opacity 0.2s;
   pointer-events: none;
+
 }
 
 .contact-info-teal {
@@ -37,7 +38,7 @@
 
 .last-item {
   content: '';
-  margin: 20px 20px;
+  margin: 20px 20px 0 20px;
   transform: translateX(-50%);
   width: 2px;
   height: 90px;
@@ -48,8 +49,8 @@
 
 .last-item- {
   content: '';
-  margin: 20px 75px;
-  transform: translateY(180%);
+  margin: 20px 20px 0px 20px;
+  transform: translateX(-50%);
   width: 2px;
   height: 90px;
   background-color: #e9f4f7;
@@ -57,14 +58,16 @@
   display: block;
 }
 
-.gmail {
-  font-weight: 400;
+/* .gmail {
+  display: inline-block;
+  font-weight: 700;
   font-family: var(--font-sans);
-  transform: rotate(-90deg) translateX(-44vh);
-  transition: 0.3s ease-in-out;
+  transform: rotate(-90deg);
+  margin: 32px 0 0 0;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .gmail:hover {
   color: #77d4e4;
-  transform: rotate(-90deg) translateX(-43vh);
-}
+  transform: rotate(-90deg) scale(1.05);
+} */
