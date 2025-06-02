@@ -1,6 +1,6 @@
 .nav-bar {
   height: 8vh;
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;

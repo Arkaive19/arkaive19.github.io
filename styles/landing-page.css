@@ -21,9 +21,9 @@
     display: flex;
   flex-direction: column; /* not column-reverse */
   align-items: center;     /* default center, override in right bar */
-  width: 10vw;
+  /* width: 10vw;
   min-width: 80px;
-  max-width: 160px;
+  max-width: 160px; */
   height: 95vh;
   display: flex;
   flex-direction: column;
