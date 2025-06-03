@@ -33,6 +33,7 @@
 }
 
 
+
 .info-bar-right {
   left: 1vw; /* top: 0; */
   justify-content: flex-end;
@@ -51,4 +52,17 @@
   height: fit-content;
   width: 80%;
   margin: 10vh 1vw 0vh 1vw;
+}
+
+.blur-in{
+  transition: 1s ease-in-out;
+  animation: blur-in 8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+@keyframes blur-in { 
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
