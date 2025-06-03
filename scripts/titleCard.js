@@ -10,4 +10,4 @@ setInterval(() => {
   title.innerText = 'Arkaive1'
   title.innerText = 'Arkaive19'
   title.innerText = 'A'
-}, 1000)
+}, 1000) //effect
