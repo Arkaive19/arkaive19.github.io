@@ -60,15 +60,14 @@
   width: 10%;
 }
 .ref-img {
-height: 50vh;
-width: 35%;
-/* border: 2px solid #435680; */
-background-image: url("../assets/tech-stack.png");
-background-size: contain; 
-background-repeat: no-repeat; 
-background-position: center; 
-border-radius: 10px;
-
+  height: 50vh;
+  width: 35%;
+  /* border: 2px solid #435680; */
+  background-image: url('../assets/tech-stack.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
 }
 
 @media (max-width: 775px) {
