@@ -18,11 +18,11 @@
   font-family: var(--font-sans);
   display: flex;
   flex-direction: column;
-  text-shadow:
+  /* text-shadow:
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+    1px 1px 0 #fff; */
   /* align-items: center; */
   /* justify-content: flex-end; */
 }
