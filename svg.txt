@@ -1,0 +1,12 @@
+ #e9f4f7 text color
+ #73f5ed Accent
+
+instagram:
+
+GITHUB:
+
+linkedin
+
+discord
+
+gmail

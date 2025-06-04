@@ -68,6 +68,7 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
+  opacity: 0;
 }
 
 @media (max-width: 775px) {
