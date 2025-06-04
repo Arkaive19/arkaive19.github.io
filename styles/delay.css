@@ -22,9 +22,13 @@
 .fade-delay-8 {
   animation-delay: 3.5s;
 }
-.fade-delay-9{
+.fade-delay-9 {
   animation-delay: 3.6s;
 }
 .fade-delay-10 {
   animation-delay: 3.7s;
+}
+
+.fade-delay-11 {
+  animation-delay: 3.8s;
 }
