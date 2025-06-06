@@ -4,14 +4,25 @@
     color 0.3s,
     transform 11s cubic-bezier(0.77, 0, 0.175, 1),
     box-shadow 0.5s cubic-bezier(0.77, 0, 0.175, 1); */
-    transform: translateX(0) translateY(0);
-    transition: 5s ease-in-out ;
+  transform: translateX(0) translateY(0) !important;
+  transition: 0.5s ease-in-out !important;
+  opacity: 1;
+  animation-delay: 3.8s;
 }
 
+@keyframes fade-up-in {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .hov:hover {
   color: #73f5ed !important;
-  transform: translateX(-10px) translateY(-10px)!important;
+  transform: translateX(-10px) translateY(-10px) !important;
   box-shadow: 5px 5px 0 #435680 !important;
-  transition: 5s ease-in-out ;
+  transition: 0.5s ease-in-out !important;
 }
-

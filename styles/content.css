@@ -79,3 +79,11 @@
     width: 100%;
   }
 }
+
+.ref-btn {
+  margin-top: 2vh;
+  width: 20%;
+  height: 2vh;
+  border-radius: 10px;
+  background-color: #435680;
+}
