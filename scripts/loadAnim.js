@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         overlay.remove()
         showContent()
-      }, 1000) // fade-out duration
-    }, 1200) // hexagon animation duration (1.2s)
-  }, 1000) // overlay fade-in duration (1s)
+      }, 1000)
+    }, 1200)
+  }, 1000) 
 })
