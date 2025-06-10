@@ -81,9 +81,12 @@
 }
 
 .ref-btn {
+  font-weight: 900;
+  z-index: 2;
   margin-top: 2vh;
   width: 20%;
-  height: 2vh;
-  border-radius: 10px;
-  background-color: #435680;
+  height: 4vh;
+  border-radius: 20px;
+  border:2px solid #77d4e4;
+  background-color: #77d4e4;
 }
