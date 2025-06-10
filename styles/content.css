@@ -81,12 +81,17 @@
 }
 
 .ref-btn {
+  color: #0b0e22;
   font-weight: 900;
-  z-index: 2;
+ text-decoration: wavy;
   margin-top: 2vh;
   width: 20%;
   height: 4vh;
-  border-radius: 20px;
+  border-radius: 8px;
   border:2px solid #77d4e4;
   background-color: #77d4e4;
+}
+
+.ref-btn:hover{
+    background-color:#435680 ;
 }
