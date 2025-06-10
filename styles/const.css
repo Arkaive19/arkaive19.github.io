@@ -6,6 +6,9 @@
   /* border: 2px solid white; */
   /* overflow-x:hidden; */
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;

@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
         showContent()
       }, 1000)
     }, 1200)
-  }, 1000) 
+  }, 1000)
 })
