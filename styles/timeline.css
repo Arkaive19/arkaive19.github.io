@@ -1,0 +1,40 @@
+.timeline {
+  height: fit-content;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid white; */
+}
+
+.line {
+  height: 70vh;
+  width: 0.5%;
+  border: 2px solid #73f5ed;
+  border-radius: 100px;
+  background-color: #435680;
+}
+.items {
+  z-index: 2;
+  padding-left: 2vw;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+.items::before {
+  content: '';
+  position: absolute;
+  top: 125vh;
+  left: 10.1vw;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #73f5ed;
+  border: none;
+  outline: none;
+  box-shadow:
+    0 0 0 4px #435680,
+    0 0 0 8px #73f5ed;
+  cursor: pointer;
+  transform: scale(0.8);
+}
