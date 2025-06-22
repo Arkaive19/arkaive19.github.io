@@ -5,7 +5,7 @@
     transform 11s cubic-bezier(0.77, 0, 0.175, 1),
     box-shadow 0.5s cubic-bezier(0.77, 0, 0.175, 1); */
   transform: translateX(0) translateY(0) !important;
-  transition: 0.5s ease-in-out !important;
+  transition: 0.3s ease-in-out !important;
   opacity: 1;
   animation-delay: 3.8s;
 }
@@ -24,5 +24,5 @@
   color: #73f5ed !important;
   transform: translateX(-5px) translateY(-5px) !important;
   box-shadow: 5px 5px 0 #435680 !important;
-  transition: 0.5s ease-in-out !important;
+  transition: 0.3s ease-in-out !important;
 }
