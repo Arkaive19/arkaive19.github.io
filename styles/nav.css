@@ -1,5 +1,5 @@
 .nav-bar {
-  height: 8vh;
+  height: 8dvh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -25,9 +25,9 @@
 .sub-cnt-1 {
   display: flex;
   flex-direction: column;
-  padding-left: 0vw;
+  padding-left: 0dvw;
   justify-content: center;
-  padding-left: 0vw;
+  padding-left: 0dvw;
 }
 
 .sub-cnt-2 {
@@ -42,10 +42,10 @@
 }
 
 .logo {
-  width: 5vh;
-  height: 5vh;
+  width: 5dvh;
+  height: 5dvh;
   object-fit: contain;
-  margin-left: 2vw;
+  margin-left: 2dvw;
   cursor: pointer;
 
   transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
@@ -54,12 +54,13 @@
 .nav {
   font-size: larger;
   font-family: var(--font-sans);
-  margin-right: 2vw;
+  margin-right: 2dvw;
+  transition: 1s ease-in-out;
 }
 
 .TOS {
   border: 2px solid #77d4e4;
-  margin-right: 5vw;
+  margin-right: 5dvw;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 20px;
@@ -68,6 +69,7 @@
 }
 
 .nav:hover {
+  font-size: 8vh;
   color: #73f5ed !important;
 }
 

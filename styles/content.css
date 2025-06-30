@@ -1,6 +1,6 @@
 .content-item {
   width: 100%;
-  margin-bottom: 50vh;
+  margin-bottom: 50dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,14 +15,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 10vh;
+  padding-top: 10dvh;
 }
 
 .title-item {
   /* width: 40%; */
   /* border: 2px solid white; */
   font-weight: 900;
-  font-size: 3vh;
+  font-size: 3dvh;
   color: #435680;
   font-family: var(--font-sans);
   display: flex;
@@ -39,17 +39,17 @@
 .grad-text {
   font-weight: 650;
   display: block;
-  font-size: 8vh;
+  font-size: 8dvh;
   color: #e9f4f7;
   text-shadow: none;
 }
 
 .sublime-text {
   display: block;
-  font-size: 6vh;
+  font-size: 6dvh;
   font-weight: 650;
   color: #77d4e4;
-  margin-bottom: 3vh;
+  margin-bottom: 3dvh;
   text-shadow: none;
 }
 
@@ -57,7 +57,7 @@
   font-weight: 200;
   display: flex;
   width: 70%;
-  font-size: 2vh;
+  font-size: 2dvh;
   text-shadow: none;
 }
 
@@ -69,7 +69,7 @@
   width: 10%;
 }
 .ref-img {
-  height: 50vh;
+  height: 50dvh;
   width: 35%;
   /* border: 2px solid #435680; */
   background-image: url('../assets/tech-stack.png');
@@ -93,9 +93,9 @@
   color: #0b0e22;
   font-weight: 900;
   text-decoration: wavy;
-  margin-top: 2vh;
+  margin-top: 2dvh;
   width: 20%;
-  height: 4vh;
+  height: 4dvh;
   border-radius: 8px;
   border: 2px solid #77d4e4;
   color: #77d4e4;
