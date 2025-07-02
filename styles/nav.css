@@ -55,7 +55,7 @@
   font-size: larger;
   font-family: var(--font-sans);
   margin-right: 2dvw;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .TOS {
@@ -69,7 +69,7 @@
 }
 
 .nav:hover {
-  font-size: 8vh;
+  font-size: 3vh;
   color: #73f5ed !important;
 }
 
