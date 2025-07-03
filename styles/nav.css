@@ -55,7 +55,7 @@
   font-size: larger;
   font-family: var(--font-sans);
   margin-right: 2dvw;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .TOS {
