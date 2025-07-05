@@ -9,14 +9,14 @@
 }
 
 .overlay.visible {
-  opacity: 1; 
-  filter: blur(0px); 
+  opacity: 1;
+  filter: blur(0px);
   transform: scale(1);
 }
 
 .overlay.fade-out {
-   opacity: 0;
-   /* filter: blur(8px);  */
+  opacity: 0;
+  /* filter: blur(8px);  */
   /* pointer-events: none; */
-  transform: scale(0.0001); 
+  transform: scale(0.0001);
 }

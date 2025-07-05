@@ -90,7 +90,6 @@
 }
 
 .ref-btn {
-  color: #0b0e22;
   font-weight: 900;
   text-decoration: wavy;
   margin-top: 2dvh;
@@ -106,7 +105,7 @@
   scroll-margin-top: 100px;
 }
 
-#nav-area-4{
+#nav-area-4 {
   scroll-margin-top: 100px;
   width: 100%;
 }
