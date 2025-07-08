@@ -6,7 +6,7 @@ body {
 
 .timeline {
   position: relative;
-  width: 100%;
+  width: fit-content;
   margin: 0 auto;
   display: flex;
   padding: 5dvh 0;
@@ -33,8 +33,14 @@ body {
 }
 
 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 2dvw;
+  padding-left: 1dvh;
+  padding-right: 1dvh;
+  padding-top: 1dvh;
+  padding-bottom: 1dvh;
   width: 40dvw;
   background-color: #1c2236;
   color: white;
@@ -59,4 +65,38 @@ body {
 
 #nav-area-1 {
   padding-top: 5dvh;
+}
+
+.cnt{
+  margin: 0;
+  padding: 0;
+  border:none ; 
+  height: fit-content;
+  width: 100%;
+  display: flex;
+}
+.text-content{
+  width: 70%;
+  height: auto;
+  padding: 1dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.view{
+  width: 40%;
+  height: auto;
+}
+.view-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #73f5ed;
+  width: 15%;
+  height: 40%;
+  background-color: #0b0e22;
+  border: none;
+  border-radius: 8px;
+  padding: 1dvh;
+  cursor: pointer;
 }
