@@ -1,0 +1,51 @@
+/* Add this to your CSS */
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+:root {
+  --clr-1: #e9f4f7;
+  --clr-2: #73f5ed;
+  --clr-3: #77d4e4;
+  --clr-4: #435680;
+  --clr-5: #0b0e22;
+}
+
+.animated-border {
+  position: relative;
+  z-index: 0;
+  border-radius: 0.45rem;
+  /* Set border width here */
+  border: 4px solid transparent;
+  /* Two backgrounds: 1. animated border, 2. card background */
+  background:
+    conic-gradient(
+        from var(--gradient-angle, 0deg),
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-4),
+        var(--clr-3),
+        var(--clr-2),
+        var(--clr-1)
+      )
+      border-box,
+    var(--clr-card, #1f2937) padding-box;
+  /* This clips the first background to the border, second to the content */
+  background-clip: border-box, padding-box;
+  /* For Firefox */
+  -webkit-background-clip: border-box, padding-box;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}

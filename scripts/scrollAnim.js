@@ -4,14 +4,21 @@ const thres = (v = 1) => {
 
 const obsfunc = (entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting)
+    if (entry.isIntersecting) {
       document
         .querySelectorAll('.scroll')
         .forEach((el) => el.classList.add('fade-up-in'))
-    else
+      document
+        .querySelectorAll('.scroll-el')
+        .forEach((el) => el.classList.add('fast-fade-in'))
+    } else {
       document
         .querySelectorAll('.scroll')
         .forEach((el) => el.classList.remove('fade-up-in'))
+      document
+        .querySelectorAll('.scroll-el')
+        .forEach((el) => el.classList.remove('fast-fade-in'))
+    }
   })
 }
 

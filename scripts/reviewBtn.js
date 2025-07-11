@@ -1,16 +1,25 @@
 let more = document.querySelectorAll('.view-btn')
-let view = document.querySelector('.view')
+let view = document.querySelector('.view-content')
+let animborder = document.querySelector('.focus-cnt')
+let isFirstClick = true
 
 const contentHandler = (btn, i) => {
-  // let btnSn = document.querySelector(`.client-${i + 1}`)
   const clientReview = {
-    'client-1': 'first button wsp gang',
-    'client-2': 'second button wsp gang',
-    'client-3': 'third button wsp gang',
-    'client-4': 'fourth button wsp gang',
-    'client-5': 'fifth button wsp gang',
+    'client-1':
+      '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890',
+    'client-2':
+      'abcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefgabcdefg',
+    'client-3':
+      '{}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[](){}[]()',
+    'client-4':
+      '*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&*^*&',
+    'client-5':
+      '/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?/|?',
   }
+
+  view.classList.add('fade-up-in')
   view.textContent = clientReview[`client-${i + 1}`]
+  setTimeout(() => view.classList.remove('fade-up-in'), 1000)
 }
 
 more.forEach((el, i) =>
