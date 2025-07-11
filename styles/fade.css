@@ -44,6 +44,16 @@
     opacity: 1;
   }
 }
-/* .scroll-item{
-  opacity: 0;
-} */
+
+.blur-out {
+  transition: 1s ease-in-out;
+  animation: blur-out 2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+@keyframes blur-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

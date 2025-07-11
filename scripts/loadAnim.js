@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     const hexBorder = document.querySelector('.hex-border-shape')
-    if (hexBorder) {
-      hexBorder.style.strokeDashoffset = '0'
-    }
+    hexBorder ? (hexBorder.style.strokeDashoffset = '0') : null
+
     setTimeout(() => {
       overlay.classList.add('fade-out')
       setTimeout(() => {

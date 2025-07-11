@@ -10,19 +10,16 @@ const toggleDisplay = () => {
   if (bool) {
     div.style.display = 'flex'
     div.style.flexDirection = 'column'
-    // Fade in
+
     setTimeout(() => {
       div.style.opacity = '1'
     }, 10)
     btn.textContent = 'See Less'
     bool = false
   } else {
-    // Scroll to #nav-area-4 first, then fade out while scrolling
     const target = document.getElementById('nav-area-4')
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-    // Start fade out immediately
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
     div.style.opacity = '0'
     setTimeout(() => {
       div.style.display = 'none'
