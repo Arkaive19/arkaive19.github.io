@@ -23,4 +23,8 @@ const obsfunc = (entries) => {
 }
 
 const obs = new IntersectionObserver(obsfunc, thres(0.1))
+// obs.observe(document.querySelector('#nav-area-1'))
 obs.observe(document.querySelector('#nav-area-2'))
+// obs.observe(document.querySelector('#nav-area-3'))
+obs.observe(document.querySelector('#nav-area-4'))
+
