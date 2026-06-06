@@ -1,0 +1,17 @@
+.wireframe-canvas-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: radial-gradient(
+    105deg,
+    var(--surface-1),
+    var(--surface-2),
+    var(--surface-3) transparent
+  );
+  padding: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  max-width: 1200px;
+  gap: clamp(1rem, 2vw, 2rem);
+  border-radius: 2em;
+  margin: 0 auto;
+  box-shadow: var(--glow-strong);
+}

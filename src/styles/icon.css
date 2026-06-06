@@ -1,0 +1,13 @@
+.icon > path {
+  fill: var(--text);
+    transition:0.3s ease-in;
+}
+
+.icon {
+  margin: 1dvh 0;
+
+}
+
+.icon:hover > path {
+  fill: var(--accent);
+}

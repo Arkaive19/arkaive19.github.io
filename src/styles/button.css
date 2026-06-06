@@ -1,0 +1,33 @@
+button {
+  transform: translate(0, 0);
+  box-shadow: 0 0 0 var(--secondary);
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 var(--accent);
+}
+
+.btn-alt {
+  border: 3px solid var(--accent);
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  font-size: 1.3rem;
+}
+
+.btn-alternative {
+  transform: translate(0, 0);
+  box-shadow: 0 0 0 var(--secondary);
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.btn-alternative:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 #0778b6;
+}

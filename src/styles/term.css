@@ -1,0 +1,69 @@
+.console-card {
+  width: 10%;
+  height: 75%;
+  flex: 1 1 400px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 1em;
+  padding: clamp(2px, 2vw, 7px);
+}
+
+.console-card * {
+  font-family: Consolas, "Courier New", monospace !important;
+  white-space: pre;
+  line-height: 1;
+}
+
+.console-input {
+  background: var(--surface-1);
+  color: var(--text-subtle);
+  flex: 1 0 0;
+  caret-color: var(--text);
+}
+
+.console-input:focus {
+  outline: 0;
+}
+
+.console-interface {
+  background-color: var(--surface-3);
+  padding-top: 3px;
+  width: 100%;
+}
+
+.console-interface span {
+  margin: 0 5px;
+}
+
+.console-interface:focus-within {
+  outline: 1px solid var(--primary);
+}
+
+.console-output {
+  background-color: var(--surface-1);
+  width: 100%;
+  flex: 1 0 0;
+  overflow-y: auto;
+}
+
+.console-output div {
+  color: var(--text-muted) !important;
+}
+
+.console-form {
+  flex-direction: column;
+  flex: 1 0 0;
+  width: 100%;
+  border: 5px solid var(--surface-3);
+  border-radius: 1em;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.console-interface button {
+  background-color: var(--surface-1);
+  padding: 0 5px;
+  display: inline-flex;
+}

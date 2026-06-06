@@ -1,0 +1,24 @@
+.footer {
+  visibility: hidden;
+  /* opacity: 0; */
+  height: 7%;
+  flex-direction: column;
+  margin: 10dvh 0 10dvh 0;
+  gap: 1rem;
+}
+
+.foot-icons {
+  gap: 1rem;
+}
+
+.foot-line {
+  width: 200px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: var(--text);
+}
+@media (max-width: 768px) {
+  .footer {
+    visibility: visible !important;
+  }
+}

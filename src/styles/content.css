@@ -1,0 +1,12 @@
+.section-content {
+  height: 100dvh;
+  width: 90%;
+  flex-direction: row;
+  margin: 1dvh 0;
+}
+.section-content-s {
+  height: 100dvh;
+  width: 100%;
+  flex-direction: row;
+  margin: 10dvh 0;
+}

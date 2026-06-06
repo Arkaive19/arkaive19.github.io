@@ -1,0 +1,7 @@
+.scroll {
+  animation-play-state: paused;
+}
+
+.scroll.play {
+  animation-play-state: running;
+}
