@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../assets/pfp.webp";
-
+import resume from "../assets/resume.pdf"
 const Navigation = () => {
   const navbarRef = useRef(null);
   const [open, setOpen] = useState(false);
@@ -59,14 +59,15 @@ const Navigation = () => {
         {/* <a href="#contact" className="nav ud stagger" style={{ "--i": 4 }}>
           <h3 className="nav-text">Contact</h3>
         </a> */}
-        <a
-          target="_blank"
-          href="/"
-          className="nav ud stagger"
-          style={{ "--i": 5 }}
-        >
-          <button className="btn-alt">Resume</button>
-        </a>
+   <a
+  href={resume}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="nav ud stagger"
+  style={{ "--i": 5 }}
+>
+  <button className="btn-alt">Resume</button>
+</a>
       </div>
     </header>
   );
