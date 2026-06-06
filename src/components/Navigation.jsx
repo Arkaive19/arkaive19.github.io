@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../assets/vite.svg";
+import logo from "../assets/pfp.webp";
 
 const Navigation = () => {
   const navbarRef = useRef(null);

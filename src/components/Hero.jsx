@@ -1,6 +1,6 @@
 import React from "react";
-import verticalLogo from "../assets/vite.svg";
-import workflow from "../assets/workflow.png";
+import verticalLogo from "../assets/pfp.webp";
+import workflow from "../assets/workflow.webp";
 import Term from "./Term/Terminal.jsx";
 const Hero = () => {
   return (

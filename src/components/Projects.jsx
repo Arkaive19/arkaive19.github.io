@@ -11,13 +11,13 @@ import {
   FaBookmark,
 } from "react-icons/fa";
 
-import dotfiles from "../assets/dotfiles.png";
-import sorter from "../assets/sorter.png";
-import love from "../assets/love.png";
-import misc from "../assets/misc.png";
-import hkse from "../assets/hkse.png";
-import eww from "../assets/eww.png";
-import bookmarklet from "../assets/bookmarklet.png";
+import dotfiles from "../assets/dotfiles.webp";
+import sorter from "../assets/sorter.webp";
+import love from "../assets/love.webp";
+import misc from "../assets/misc.webp";
+import hkse from "../assets/hkse.webp";
+import eww from "../assets/eww.webp";
+import bookmarklet from "../assets/bookmarklet.webp";
 
 const optionsData = [
   {

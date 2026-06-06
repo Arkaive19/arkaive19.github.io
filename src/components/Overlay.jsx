@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/vite.svg";
+import logo from "../assets/pfp.webp";
 
 export const Overlay = ({ onFinish }) => {
   const [visible, setVisible] = useState(false);
