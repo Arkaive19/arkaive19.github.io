@@ -38,7 +38,7 @@ export const About = () => {
           <div className="timeline-item" key={index}>
             <div className="tm-point"></div>
 
-            <div className="timeline-content">
+            <div className="timeline-content stagger scroll rl" style={{"--i":index+1}}>
               <span className="timeline-year">{item.year}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
