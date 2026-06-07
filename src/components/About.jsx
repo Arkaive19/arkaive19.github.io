@@ -46,7 +46,6 @@ export const About = () => {
           </div>
         ))}
       </div>
-      <Term></Term>
     </div>
   );
 };

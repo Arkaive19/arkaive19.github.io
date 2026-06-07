@@ -6,6 +6,7 @@ import Projects from "./Projects.jsx";
 import Scroll from "./Special/Scroll.jsx";
 import Footer from "./Footer.jsx";
 import About from "./About.jsx";
+import Special from "./Special.jsx";
 export const Content = () => {
   return (
     <div className={`content`}>
@@ -17,6 +18,7 @@ export const Content = () => {
           <Scroll>
             <Projects />
             <About />
+            <Special/>
             <Footer></Footer>
           </Scroll>
         </div>

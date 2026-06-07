@@ -259,6 +259,7 @@ const Term = () => {
   }
 
   return (
+    <>
     <div
       className="console-card card cflex ud stagger scroll"
       style={{ "--i": 8 }}
@@ -288,6 +289,7 @@ const Term = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 

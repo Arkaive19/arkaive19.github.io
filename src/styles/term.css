@@ -1,69 +1,177 @@
 .console-card {
-  width: 10%;
+  width: 75%;
   height: 75%;
-  flex: 1 1 400px;
+  /* flex: 1 1 400px; */
   min-width: 280px;
+
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  border-radius: 1em;
-  padding: clamp(2px, 2vw, 7px);
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 217, 255, 0.25),
+    rgba(20, 184, 166, 0.25)
+  );
+
+  border-radius: 1.2em;
+  padding: clamp(2px, 1vw, 6px);
+
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-soft);
+  position: relative;
 }
 
+/* subtle glow border */
+.console-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    120deg,
+    var(--primary),
+    transparent,
+    var(--secondary)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Terminal font */
 .console-card * {
   font-family: Consolas, "Courier New", monospace !important;
-  white-space: pre;
-  line-height: 1;
+  white-space: pre-wrap;
+  line-height: 1.35;
 }
 
-.console-input {
-  background: var(--surface-1);
-  color: var(--text-subtle);
-  flex: 1 0 0;
-  caret-color: var(--text);
-}
-
-.console-input:focus {
-  outline: 0;
-}
-
-.console-interface {
-  background-color: var(--surface-3);
-  padding-top: 3px;
-  width: 100%;
-}
-
-.console-interface span {
-  margin: 0 5px;
-}
-
-.console-interface:focus-within {
-  outline: 1px solid var(--primary);
-}
-
-.console-output {
-  background-color: var(--surface-1);
-  width: 100%;
-  flex: 1 0 0;
-  overflow-y: auto;
-}
-
-.console-output div {
-  color: var(--text-muted) !important;
-}
-
+/* FORM WRAPPER */
 .console-form {
   flex-direction: column;
   flex: 1 0 0;
   width: 100%;
-  border: 5px solid var(--surface-3);
+
   border-radius: 1em;
   overflow: hidden;
-  min-height: 300px;
+
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+
+  min-height: 320px;
 }
 
+/* OUTPUT */
+.console-output {
+  width: 100%;
+  flex: 1 0 0;
+
+  padding: 14px;
+  overflow-y: auto;
+
+  background: var(--surface-1);
+}
+
+/* smoother scrolling */
+.console-output {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar */
+.console-output::-webkit-scrollbar {
+  width: 6px;
+}
+.console-output::-webkit-scrollbar-thumb {
+  background: var(--surface-3);
+  border-radius: 10px;
+}
+
+/* text lines */
+.console-output div {
+  color: var(--text-muted) !important;
+  margin-bottom: 2px;
+}
+
+/* command line highlight */
+.cmd {
+  color: var(--primary) !important;
+  text-shadow: var(--glow);
+}
+
+/* welcome banner pop */
+.console-output div:nth-child(-n + 5) {
+  color: var(--primary);
+  opacity: 0.9;
+}
+
+/* INTERFACE */
+.console-interface {
+  background: var(--surface-2);
+  padding: 8px 10px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-top: 1px solid var(--border);
+}
+
+/* focus glow */
+.console-interface:focus-within {
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+/* prompt button */
 .console-interface button {
-  background-color: var(--surface-1);
-  padding: 0 5px;
+  background: transparent;
+  padding: 0 6px;
+
+  color: var(--primary);
+  font-weight: bold;
+
   display: inline-flex;
+  align-items: center;
+
+  opacity: 0.8;
+}
+
+/* INPUT */
+.console-input {
+  background: transparent;
+  color: var(--highlight);
+
+  flex: 1;
+  border: none;
+  outline: none;
+
+  caret-color: var(--primary);
+  font-size: 14px;
+}
+
+/* subtle typing glow */
+.console-input:focus {
+  text-shadow: 0 0 6px rgba(0, 217, 255, 0.6);
+}
+
+/* placeholder */
+.console-input::placeholder {
+  color: var(--text-subtle);
+}
+
+/* smooth line appearance */
+.console-output div {
+  animation: fadeIn 0.15s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
