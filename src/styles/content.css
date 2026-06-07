@@ -3,11 +3,22 @@
   width: 90%;
   flex-direction: row;
   margin: 1dvh 0;
+  /* gap: 10dvh; */
 }
 .section-content-s {
-  padding: 3dvh;
+  padding: 3dvh 0;
   height: 100dvh;
   width: 100%;
   flex-direction: row;
-  margin: 10dvh 0;
+        /* margin: 100dvh 0; */
+}
+
+@media (max-height:900px) {
+  .section-content-s{
+      margin: 100dvh 0 0 0;
+  }
+  .footer{
+    margin: 30dvh 0 !important;
+  }
+  
 }
