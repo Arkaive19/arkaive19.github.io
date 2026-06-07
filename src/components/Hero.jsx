@@ -22,9 +22,11 @@ const Hero = () => {
             and JavaScript when needed. I am actively exploring other areas like
             mobile app development to broaden my skill set.
           </span>
-          <button className="btn-alt ud stagger" style={{ "--i": 8 }}>
-            Learn More
-          </button>
+          <a href="#Projects">
+            <button className="btn-alt ud stagger" style={{ "--i": 8 }}>
+              Learn More
+            </button>
+          </a>
         </div>
         {/* <Term></Term> */}
         <div className="image lr stagger" style={{ "--i": 4 }}>
