@@ -5,6 +5,7 @@
   margin: 1dvh 0;
 }
 .section-content-s {
+  padding: 3dvh;
   height: 100dvh;
   width: 100%;
   flex-direction: row;
